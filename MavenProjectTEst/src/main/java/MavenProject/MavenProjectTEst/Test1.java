@@ -11,8 +11,9 @@ public class Test1 {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\kishorr1\\Downloads\\chromedriver_win32\\chromedriver.exe");
 		
 		WebDriver obj = new ChromeDriver(); 
-		obj.get("https://www.selenium.dev/");
-	obj.findElement(By.id("gsc-i-id1")).sendKeys("Test");	    
+		obj.get("https://www.selenium.dev/downloads/");
+	obj.findElement(By.id("gsc-i-id1")).sendKeys("Test");
+	obj.close();
 	
 	}
 
